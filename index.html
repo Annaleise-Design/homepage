@@ -38,21 +38,21 @@
       z-index: 10;
     }
 
-    .icons {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      z-index: 1;
-    }
+      .icons { 
+  position: relative; 
+  width: 100vw; 
+  height: 100vh; 
+  z-index: 1;
+  --yshift: 4vmin;
+  }
+.icon{
+  position:absolute;
+  top:50%; left:50%;
+  width: var(--size, clamp(120px, 12vmin, 220px));
+  height:auto;
+  opacity:.9;
 
-    .icon {
-      width: 215px;
-      height: auto;
-      animation: spin 7s linear infinite;
-    }
-.i1{ --angle:320deg; --radius:50vmin; --delay:0s; --size: 215px; --speed:7s; }
+  .i1{ --angle:320deg; --radius:50vmin; --delay:0s; --size: 215px; --speed:7s; }
 
   </style>
 </head>
